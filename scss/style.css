@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap");
+#auth-page {
+  min-height: 100vh;
+  background: rgb(30, 30, 30);
+  display: grid;
+  place-items: center;
+}
+
+#auth-page form {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 500px;
+  padding: 60px 80px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  gap: 20px;
+}
+@media (max-width: 670px) {
+  #auth-page form {
+    width: 100%;
+    min-width: unset;
+    height: 100vh;
+    justify-content: center;
+    border-radius: 0px;
+  }
+}
+#auth-page form img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 45px;
+}
+#auth-page form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#auth-page form input {
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid gray;
+  outline: none;
+}
+#auth-page form input:focus {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  outline: 1px solid #1da1f2;
+}
+#auth-page form button {
+  width: 100%;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 8px;
+}
+#auth-page form .name-warning,
+#auth-page form .pass-warning {
+  height: 45px;
+}
+#auth-page form .name-warning p,
+#auth-page form .pass-warning p {
+  width: 100%;
+  background: #f8d7da;
+  color: black;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins";
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  filter: brightness(60%);
+}
+
+#feed {
+  min-height: 100vh;
+  font-family: "poppins";
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 600px 1fr;
+}
+@media (max-width: 670px) {
+  #feed {
+    grid-template-columns: 1fr 600px 1fr !important;
+  }
+}
+
+main {
+  height: 100vh;
+  border: 1px solid rgb(60, 60, 60);
+  overflow: auto;
+}
+
+@media (max-width: 1000px) {
+  aside {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

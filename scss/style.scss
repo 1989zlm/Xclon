@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+@import 'auth';
+@import 'responsive';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins';
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+}
+
+button:hover {
+    filter: brightness(60%);
+}
+
+// ANASAYFA
+#feed {
+    min-height: 100vh;
+    font-family: 'poppins';
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+
+    @include sm {
+        grid-template-columns: 1fr 600px 1fr !important;
+    }
+}
+
+// sol taraf
+nav {}
+
+//ORTA KISIM
+main {
+    height: 100vh;
+    border: 1px solid rgb(60, 60, 60);
+    overflow: auto;
+
+}
+
+// sağ taraf
+aside {
+    @include md {
+        display: none;
+    }
+}
